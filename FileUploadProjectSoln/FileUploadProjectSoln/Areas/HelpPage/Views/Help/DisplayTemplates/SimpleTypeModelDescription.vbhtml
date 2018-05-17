@@ -1,0 +1,3 @@
+@Imports FileUploadProjectSoln.Areas.HelpPage.ModelDescriptions
+@ModelType SimpleTypeModelDescription
+@Model.Documentation
