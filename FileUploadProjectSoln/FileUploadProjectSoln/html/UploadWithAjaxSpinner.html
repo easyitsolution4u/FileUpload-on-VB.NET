@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>File upload page</title>
+    <title>File upload page with Ajax</title>
 
     <script src="../Scripts/jquery-1.10.2.min.js"></script>
 
@@ -15,7 +15,18 @@
     </div>
 
 
-    <div id="divPleaseWaitMessage" style="display:none;">Processsing Please Wait ...</div>
+    <div id="divPleaseWaitMessage" style="display:none;">
+    
+    
+     <span>Processsing Please Wait ...</span>
+
+        <img src="../images/spinner.gif" alt="" />
+    
+    
+    <br />
+    
+   
+    </div>
 
     <div>
 
@@ -55,7 +66,7 @@
                 self.files = files;
 
             }
-           
+
 
             fileUploader.prototype.populateData = function () {
                 var self = this;
@@ -76,7 +87,7 @@
                 $("#divPleaseWaitMessage").hide();
                 var self = this;
                 if (self.files.length > 0) {
-                   
+
                     if (window.FormData !== undefined) {
                         self.data = new FormData();
                         for (var x = 0; x < self.files.length; x++) {
@@ -122,90 +133,13 @@
                 }
             }
 
-        return fileUploader;
+            return fileUploader;
         }(jQuery));
 
-        
+
 
         var fileUploader = new ssa.etdms.fileUploader("txtUploadFile", "btnUpload", "/FileUpload/Upload");
 
-        //console.log(fileUploader.logFile());
-        
-
-       
-
-        $("#divResultContainer").hide();
-
-        $("#containerDiv").hide();
-
-        //$('#btnUpload').on('click', function (e) {
-        
-        //    var files = $("#txtUploadFile").get(0).files
-        
-
-        //    if (files.length > 0) {
-
-        //        if (window.FormData !== undefined) {
-
-        //            var data = new FormData();
-
-        //            for (var x = 0; x < files.length; x++) {
-
-        //                data.append("file" + x, files[x]);
-
-        //            }
-
-        //            console.log("Date are : " + data);
-
-        //            $.ajax({
-
-        //                type: "POST",
-
-        //                url: '/FileUpload/Upload',
-
-        //                contentType: false,
-
-        //                processData: false,
-
-        //                data: data,
-
-        //                success: function (result) {
-
-
-        //                    $("#divResultContainer").show();
-
-        //                    $("#content").val(result);
-
-        //                },
-
-        //                error: function (xhr, status, p3, p4) {
-
-        //                    var err = "Error " + " " + status + " " + p3 + " " + p4;
-
-        //                    if (xhr.responseText && xhr.responseText[0] == "{")
-
-        //                        err = JSON.parse(xhr.responseText).Message;
-
-        //                    console.log(err);
-
-        //                },
-
-        //                beforeSend: function () {
-
-        //                    $("#divResultContainer").show();
-        //                }
-
-        //            });
-
-        //        } else {
-
-        //            alert("This browser doesn't support HTML5 file uploads!");
-
-        //        }
-
-        //    }
-
-        //});
-    </script>
+        </script>
 </body>
 </html>
