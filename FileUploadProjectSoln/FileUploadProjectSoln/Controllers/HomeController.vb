@@ -22,6 +22,7 @@
         ViewData("Countries") = {}
         ViewData("Continents") = {}
          ViewData("Russians") = {}
+        ViewDate("Success") = {}
         Return View()
     End Function
 
