@@ -17,9 +17,11 @@
         Return View()
     End Function
 
-    function SomeMoreChanges() as ActionResult
-        
-    End  Function
+    Function SomeMoreChanges() As ActionResult
+
+        ViewData("Countries") = {}
+        Return View()
+    End Function
 
 
 End Class
