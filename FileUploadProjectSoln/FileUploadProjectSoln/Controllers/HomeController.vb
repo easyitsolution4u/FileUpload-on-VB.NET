@@ -20,6 +20,8 @@
     Function SomeMoreChanges() As ActionResult
 
         ViewData("Countries") = {}
+        ViewData("Continents") = {}
+         ViewData("Russians") = {}
         Return View()
     End Function
 
