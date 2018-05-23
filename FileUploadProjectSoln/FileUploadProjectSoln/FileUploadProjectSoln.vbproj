@@ -278,6 +278,9 @@
     </None>
     <None Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="html\FileUploader.html" />
+    <Content Include="html\UploadWithAjaxSpinner.html" />
+    <Content Include="images\spinner.gif" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />

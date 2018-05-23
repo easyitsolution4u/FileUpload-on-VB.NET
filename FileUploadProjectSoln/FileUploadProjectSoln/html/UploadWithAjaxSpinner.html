@@ -100,7 +100,7 @@
                         $.ajax({
 
                             type: "POST",
-                            url: '/FileUpload/Upload',
+                            url: '/FileUpload/Upload?cacheBuster=' + new Date().getTime() / 1000,
                             //url: self.url,
                             contentType: false,
                             processData: false,

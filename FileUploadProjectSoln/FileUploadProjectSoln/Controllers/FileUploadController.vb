@@ -19,7 +19,7 @@ Namespace Controllers
         End Function
 
         <HttpPost>
-        Function UploadFile(postedFile As HttpPostedFile) As JsonResult
+        Function Push(postedFile As HttpPostedFile) As JsonResult
             Dim fileData As String = ""
             If postedFile IsNot Nothing Then
 

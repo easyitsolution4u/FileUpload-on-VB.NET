@@ -4,7 +4,11 @@ End Code
 
 <h2>Index</h2>
 
-<form name="form1" method="post" enctype="multipart/form-data" action="FileUpload/UploadFile">
+<div>
+    <a href="~/html/FileUploader.html">Upload File</a>
+</div>
+
+<form name="form1" method="post" enctype="multipart/form-data" action="Push">
     <div>
         <label for="caption">Image Caption</label>
         <input name="caption" type="text" />
@@ -17,3 +21,5 @@ End Code
         <input type="submit" value="Submit" />
     </div>
 </form>
+
+<div id="containerDiv">Processsing Please Wait ...</div>
