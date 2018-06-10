@@ -24,7 +24,7 @@ Namespace Controllers
         Function Create(ByVal collection As FormCollection) As ActionResult
             Try
                 ' TODO: Add insert logic here
-
+                ' I am adding somre more comments
                 Return RedirectToAction("Index")
             Catch
                 Return View()
